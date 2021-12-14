@@ -1,0 +1,14 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --primary-fon-color: #e5e5e5;
+}
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.87em;
+}

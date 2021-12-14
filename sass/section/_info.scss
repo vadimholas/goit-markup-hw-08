@@ -1,0 +1,32 @@
+.info {
+  padding-top: 94px;
+}
+.info__list {
+  display: flex;
+}
+.info__item {
+  margin-right: 30px;
+  width: 270px;
+}
+.info__item:nth-child(4) {
+  margin-right: 0px;
+}
+.info__box {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.info__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
