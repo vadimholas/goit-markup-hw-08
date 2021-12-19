@@ -14,21 +14,18 @@
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: flex;
 		flex-wrap: wrap;
+		margin: -15px;
 	}
 }
-.clients__list:nth-child(3n),
-:nth-child(6n) {
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		margin-right: -30px;
-	}
-}
+
 .clients__item {
 	@media screen and (min-width: 1200px) {
 		margin-right: 30px;
 		width: 210px;
 	}
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		width: 226px;
+		flex-basis: calc((100% - 3 * 30px) / 3);
+		margin: 15px;
 	}
 }
 .clients__item:nth-child(6) {

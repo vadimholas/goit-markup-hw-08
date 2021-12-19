@@ -55,13 +55,7 @@ button {
   .clients__list {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients__list:nth-child(3n),
-  :nth-child(6n) {
-    margin-right: -30px;
+    margin: -15px;
   }
 }
 
@@ -74,7 +68,8 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
-    width: 226px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
   }
 }
 
