@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <!--
+    
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="header__logo">
@@ -52,8 +52,70 @@
               </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+        <!--menu-->
+        <button class="btn__open-menu" type="button">
+          <svg class="header-svg480">
+            <use href="images/icons.svg#icon-480header"></use>
+          </svg>
+        </button>
       </div>
-    </header>-->
+      <div class="mob__menu is-hidden"> 
+        <div class="container">
+          <div class="mob__menu-top">
+        <button  class="btn__close-menu" type="button">
+        <svg class="header-svg480">
+            <use href="images/icons.svg#icon-close"></use>
+          </svg>
+      </button>
+          <ul class="list mob__list">
+            <li class="mob__item">
+              <a class="link mob__link mob__link--active" href="./index.html">Студия</a>
+            </li>
+            <li class="mob__item">
+              <a class="link mob__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob__item"><a class="link mob__link" href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="mob__menu-botton">
+
+        
+       <ul class="mob-contact__list list">
+         <li class="mob-contact__item">
+            <a class="link mob-contact__link-tel" href="tel:+380 99 111 11 11">+38 099 111 11 11</a>
+          </li>
+         <li class="mob-contact__item">
+           <a class="link mob-contact__link" href="mailto:info@devstudiocom">info@devstudio.com</a>
+          </li>
+          
+       </ul>
+ <ul class="list mob-social__list">
+                  <li class="mob-social__item">
+                    <a class="mob-social__link link" href="">
+                     <p class="mob-social__text">Instagram<span class="mob-social__border"></span></p>
+                      </a>
+                  </li>
+                  <li class="mob-social__item">
+                    <a class="mob-social__link link" href="">
+                    <p class="mob-social__text">Twitter<span class="mob-social__border"></span></p>
+                    
+                    </a>
+                  </li>
+                  <li class="mob-social__item">
+                    <a class="mob-social__link link" href="">
+                      <p class="mob-social__text">Facebook<span class="mob-social__border"></span></p>
+                      </a>
+                  </li>
+                  <li class="mob-social__item">
+                    <a class="mob-social__link link" href="">
+                      <p class="mob-social__text">Linkedin</p>
+                      </a>
+                  </li>
+                </ul>
+              </div>
+              </div>
+      </div>
+    </header>
     <main>
       <!--решения-->
       <section class="hero">
@@ -122,34 +184,62 @@
           <ul class="list work__list">
             <li class="work__item">
               <picture>
-                <source srcset="./images/1200/1-min.jpg
-                 "
+                <source srcset="./images/1200/1-min.jpg ,
+                                ./images/1200/1-min2x1200.jpg"
                 >
-               
               <img class="work__foto" src="./images/1200/1-min.jpg" alt="номер 1" width="370" />
             </picture>
               <p class="work__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
 
             <li class="work__item">
-              <img class="work__foto" src="./images/2-min.jpg" alt="номер 2" width="370" />
+<picture>
+                <source srcset="./images/1200/2-min.jpg ,
+                                ./images/1200/2-min.jpg"
+                >
+               <img class="work__foto" src="./images/1200/2-min.jpg" alt="номер 2" width="370" />
+            </picture>
               <p class="work__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
 
             <li class="work__item">
-              <img class="work__foto" src="./images/3-min.jpg " alt="номер 3" width="370" />
-              <p class="work__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+              <picture>
+               <source srcset="./images/1200/3-min.jpg,
+                               ./images/1200/3-min2x1200.jpg"
+                >
+                <img class="work__foto" src="./images/1200/3-min.jpg" alt="номер 3" width="370" />
+          </picture>
+             <p class="work__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </li>
           </ul>
         </div>
       </section> 
       <!--команда-->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container container-team">
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img src="./images/Igor-min.jpg" alt="Игорь" />
+              <picture> 
+                 <source
+                 srcset="./images/480/igor1x480.jpg,
+                         ./images/480/igor2x480.jpg"
+                       media="(min-width: 480px)"
+                > 
+                <source
+                 srcset="./images/768/igor1x768.jpg,
+                         ./images/768/igor2x768.jpg"
+                       media="(min-width: 768px)"
+                >
+               
+               <source srcset="./images/1200/Igor-min.jpg,
+                               ./images/1200/igor2x1200.jpg"
+                       media="(min-width: 1200px)"
+                >
+               
+                <img src="./images/1200/Igor-min.jpg" alt="Игорь"/>
+          </picture>
+              
               <div class="team__border">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -185,7 +275,28 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/Ola-min.jpg" alt="Ольга"/>
+                <picture>
+                  <source
+                 srcset="./images/480/ola1x480.jpg,
+                         ./images/480/ola2x480.jpg"
+                       media="(min-width: 480px)"
+                > 
+                <source
+                 srcset="./images/768/ola1x768.jpg,
+                         ./images/768/ola2x768.jpg"
+                       media="(min-width: 768px)"
+                >
+
+               <source srcset="./images/1200/ola-min.jpg,
+                               ./images/1200/ola2x1200.jpg"
+                       media="(min-width: 1200px)"
+                >
+               
+                 
+                 <img src="./images/1200/Ola-min.jpg" alt="Ольга"/>
+               
+          </picture>
+             
               <div class="team__border">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__text">Frontend Develope</p>
@@ -221,7 +332,29 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/Nikolay-min.jpg" alt="Николай" width="270" />
+               <picture> 
+                  <source
+                 srcset="./images/480/nikola1x480.jpg,
+                         ./images/480/nikola2x480.jpg"
+                       media="(min-width: 480px)"
+                >
+                
+                <source
+                 srcset="./images/768/nikola1x768.jpg,
+                         ./images/768/nikola2x768.jpg"
+                       media="(min-width: 768px)"
+                >
+
+               <source srcset="./images/1200/Nikolay-min.jpg,
+                               ./images/1200/nikola2x1200.jpg"
+                       media="(min-width: 1200px)"
+                >
+                
+               
+                
+               <img src="./images/1200/Nikolay-min.jpg" alt="Николай" />
+          </picture>
+             
               <div class="team__border">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -257,7 +390,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/Myhaylo-min.jpg" alt="Михаил"/>
+                <picture> 
+                   <source
+                 srcset="./images/480/mihaylo1x480.jpg,
+                         ./images/480/mihaylo2x480.jpg"
+                       media="(min-width: 480px)"
+                >
+
+                  <source
+                 srcset="./images/768/mihaylo1x768.jpg,
+                         ./images/768/mihaylo2x768.jpg"
+                       media="(min-width: 768px)"
+                >
+
+               <source srcset="./images/1200/Myhaylo-min.jpg,
+                               ./images/1200/mihaylo2x1200.jpg"
+                       media="(min-width: 1200px)"
+                >
+
+                
+               
+                <img src="./images/1200/Myhaylo-min.jpg" alt="Михаил"/>
+              
+          </picture>
+              
               <div class="team__border">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -294,7 +450,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       
       <section class="clients">
         <div class="container">
@@ -345,7 +501,7 @@
         </div>
       </section>
     </main>
-    <!--
+    
     <footer class="footer">
       <div class="container footer__container">
         <div>
@@ -360,10 +516,10 @@
                 >
               </li>
               <li class="footer__contact">
-                <a class="link footer__link-contact" href="mailto:info@example.com">info@devstudio.com</a>
+                <a class="link footer__link-contact" href="mailto:info@example.com">info@example.com</a>
               </li>
               <li class="contact-footer">
-                <a class="link footer__link-contact" href="tel:+380991111111">+38 096 111 11 11</a>
+                <a class="link footer__link-contact" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -402,19 +558,19 @@
           <p class="footer-form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
           <form class="footer-form__form" action="#">
             <input class="footer-form__input" type="text" name="maill" placeholder="E-mail" />
-
+<div class="footer-btn__480">
             <button class="footer-btn" type="submit">
               Подписаться
               <svg class="footer-btn__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
-            </button>
+            </button></div>
           </form>
         </div>
       </div>
     </footer>
--->
-    <!--<div class="bakcdrop is-hidden" data-modal>
+
+    <div class="bakcdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-modal" width="18" height="18">
@@ -489,5 +645,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

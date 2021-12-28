@@ -1,9 +1,9 @@
 .work {
 	@media screen and (max-width: 1200px) {
 		display: none;
+		padding-top: 94px;
+		padding-bottom: 94px;
 	}
-	padding-top: 94px;
-	padding-bottom: 94px;
 }
 .work__list {
 	display: flex;
@@ -24,6 +24,7 @@
 .work__text {
 	color: #ffffff;
 	display: block;
+	position: absolute;
 }
 .work__text {
 	font-family: Roboto;

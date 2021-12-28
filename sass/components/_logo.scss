@@ -1,20 +1,43 @@
 .header__logo {
-  color: var(--title-text-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  display: block;
+	color: var(--title-text-color);
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.15;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	display: block;
 }
 .footer__logo {
-  color: var(--title-text-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  display: block;
+	@media screen and (min-width: 1199px) {
+		color: var(--title-text-color);
+		font-family: Raleway;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1.15;
+		letter-spacing: 0.03em;
+		text-decoration: none;
+		display: block;
+	}
+	@media screen and (max-width: 1199px) {
+		color: var(--title-text-color);
+		font-family: Raleway;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1.15;
+		letter-spacing: 0.03em;
+		text-decoration: none;
+		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	color: var(--title-text-color);
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.15;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	display: block;
 }
