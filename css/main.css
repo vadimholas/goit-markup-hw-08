@@ -36,6 +36,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -283,12 +284,6 @@ button {
 
 .footer-icon__box {
   margin-bottom: 60px;
-}
-
-@media screen and (min-width: 1199px) {
-  .footer-icon__box {
-    margin-left: 70px;
-  }
 }
 
 .footer-icon__list {
@@ -744,7 +739,6 @@ button {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -829,6 +823,16 @@ button {
   }
 }
 
+.info__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 @media screen and (max-width: 480px) {
   .info__text {
     font-size: 13px;
@@ -896,9 +900,29 @@ button {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 .portfolio-foto__list {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-foto__list {
+    margin-top: 40px;
+  }
 }
 
 .btn-portfolio__list {
@@ -911,7 +935,7 @@ button {
     display: block;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -945,7 +969,6 @@ button {
   .portfolio-foto__item {
     width: 370px;
     margin-bottom: 27px;
-    margin-top: 20px;
     margin-right: 30px;
   }
 }
@@ -1088,7 +1111,7 @@ button {
 }
 
 .team__item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1100,6 +1123,19 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-widht: 480px) and (max-width: 767px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -1159,9 +1195,16 @@ button {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .work {
     display: none;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .work {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1867,35 +1910,48 @@ body {
 .team__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.7;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.7;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
+  color: #212121;
+  margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .clients__title {
-    font-size: 28px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients__title {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
   }
 }
 
