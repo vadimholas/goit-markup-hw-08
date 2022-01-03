@@ -4,8 +4,8 @@
 		padding-bottom: 60px;
 	}
 	@media screen and (max-width: 767px) {
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -18,7 +18,13 @@
 	}
 }
 .btn-portfolio__list {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 1200px) {
+		display: block;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: block;
 		display: flex;
 		justify-content: center;
@@ -62,6 +68,11 @@
 
 .portfolio-foto__item:nth-last-child(-n + 3) {
 	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
+	}
+}
+.portfolio-foto__item:nth-child(9) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		margin-bottom: 0;
 	}
 }
