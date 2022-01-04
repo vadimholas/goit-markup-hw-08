@@ -84,6 +84,7 @@ button {
   .clients__item {
     margin-right: 30px;
     width: 170px;
+    height: 92px;
   }
 }
 
@@ -255,6 +256,7 @@ button {
 @media screen and (max-width: 1199px) {
   .footer__item {
     margin-top: 20px;
+    margin-bottom: 8px;
     display: flex;
     justify-content: center;
   }
@@ -413,6 +415,7 @@ button {
   .footer__contact {
     display: flex;
     justify-content: center;
+    margin-bottom: 8px;
   }
 }
 
@@ -432,6 +435,13 @@ button {
 
 .header__span--accent {
   color: var(--accent-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .nav__list {
@@ -504,15 +514,17 @@ button {
   color: var(--accent-text-color);
 }
 
-.nav__link--active::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  border-radius: 2px;
-  background-color: #2196f3;
+@media screen and (min-width: 768px) {
+  .nav__link--active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: #2196f3;
+  }
 }
 
 .contact__link {
@@ -730,7 +742,7 @@ button {
     background-color: #2f303a;
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
+    max-width: 1600px;
     padding-bottom: 200px;
     padding-top: 200px;
   }
@@ -1004,7 +1016,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .portfolio-foto__item:nth-child(9) {
     margin-bottom: 0;
   }
@@ -1129,10 +1141,6 @@ button {
   }
 }
 
-.team__item {
-  margin-bottom: 20px;
-}
-
 @media screen and (min-width: 1200px) {
   .team__item {
     margin-right: 30px;
@@ -1146,7 +1154,7 @@ button {
   }
 }
 
-@media screen and (min-widht: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .team__item {
     margin-bottom: 30px;
   }
@@ -1161,6 +1169,12 @@ button {
 @media screen and (min-width: 1200px) {
   .team__item:last-child {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
